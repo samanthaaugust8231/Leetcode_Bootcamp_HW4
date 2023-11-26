@@ -1,0 +1,14 @@
+class Solution(object):
+    def minAddToMakeValid(self, s):
+        s = []
+        c = 0
+
+        for char in s:
+            if char == '(':
+                s.append('(')
+            elif char == ')' and stack:
+                s.pop()
+            else:
+                c += 1  # Unmatched closing parenthesis
+
+        return len(s) + c

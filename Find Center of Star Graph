@@ -1,0 +1,10 @@
+class Solution(object):
+    def findCenter(self, edges):
+        n = set()
+
+        for edge in edges:
+            for n in edge:
+                if n in nodes:
+                    return n
+                nodes.add(n)
+        
